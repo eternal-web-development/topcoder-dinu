@@ -1,0 +1,404 @@
+Step 1
+Start by setting up your HTML structure. Add a <!DOCTYPE> declaration and
+an html element with a lang attribute set to en. Within the html element,
+add a head element and a body element.
+
+Step 2
+Within your head element, add a meta tag with the charset attribute set to
+utf-8. Also add a title element with the text Picasso Painting.
+
+Step 3
+Go ahead and link your CSS file now, even though you have not written any
+CSS yet.
+Add a link element with a rel of stylesheet and an href of
+styles. css .
+
+Step 4
+FontAwesome is a library of SVG-powered icons, many of which are freely
+available to use. You will be using some of these icons in this project, so
+you will need to link the external stylesheet to your HTML.
+Add a link element with a rel of stylesheet and an href of
+https://use.fontawesome.com/releases/v5.8.2/css/all.css .
+
+Step 5
+To get your painting started, give your body element a background-color
+of rgb(184, 132, 46).
+
+Step 6
+Within your body tag, add a div element. Give it an td of back-wall .
+
+Step 7
+Use an id selector to give the element with the id back-wall a
+background-color of #884513.
+
+Step 8
+Give the *back-wall element a width of 100% and a height of 60%.
+
+Step 9
+Typically, HTML is rendered in a top-down manner. Elements at the top of the
+code are positioned at the top of the page. However, many times you may want
+to move the elements to different positions. You can do this with the position
+property.
+Set the posttton property for the #back-wall element to absolute. An
+absolute position takes the element out of that top-down document flow and
+allows you to adjust it relative to its container.
+When an element is manually positioned, you can shift its layout with top,
+left, right, and bottom. Set the *back-wall element to have a top value of
+o, and a left value of ø.
+
+step lø
+The z- index property is used to create "layers" for your HTML elements. If you
+are familiar with image editing tools, you may have worked with layers before.
+This is a similar concept.
+Elements with a higher z-tndex value will appear to be layered on top of
+elements with a lower z- index value. This can be combined with the
+positioning in the previous lesson to create unique effects.
+Since the back-wall element will need to appear "behind" the other elements
+you will be creating, give the back-wall element a z-tndex of -1.
+
+Step 11
+Below your #back-wall element, create a div with a class of characters.
+This is where you will be creating your painting's characters.
+
+step 12
+Inside that . characters element, create another div with an td of offwhite-
+character.
+
+step 13
+Create four div elements inside your offwhtte-character element. Give
+those div elements the following td values, in order white-hat, black-mask,
+gray-tnstrument, tan-table.
+
+Step 14
+This character needs eyes. Create two div elements in the *black-mask
+element. Give them the classes eyes left and eyes right, in that order.
+
+step 15
+Create some "dots" for the instrument. Add five div elements within your
+#gray-tnstrument element. Set the class of each to black-dot.
+
+Step 16
+Using an id selector, create a rule for the element with the id offwhtte-
+character. Give it a width of 3øøpx,a height of 550px, and a background-
+color of GhostWhtte .
+
+Step 17
+Move the #0ffwhtte-character into place by giving it a posttton of
+absolute, a top value of 20%, and a left valueof 17.5%.
+
+Step 18
+Using an id selector, style the element with the id white-hat . Give it a width
+and height of 0, and a border-style of solid.
+
+Step 19
+That does not look quite right. Set a border-width of 12øpx 140px
+18øpx to size the hat properly.
+
+step 20
+Now you have a large box. Give it a border-top-color, border-right-color ,
+and border-left-color of transparent. Set the border-bottom-color to
+GhostWhtte . This will make it look more like a hat.
+
+Step 21
+Give the hata posttton of absolute, a top value of -14øpx, and a left
+value of o.
+
+step 22
+Using an id selector, create a rule for the element with the id black-mask.
+Give ita width of 100%, a height of 5øpx, and a background-color of
+rgb(45, 31, 19).
+
+step 23
+Give the mask a position of absolute, and a top and left value of o.
+
+step 24
+To ensure you can see the mask, give ita z-index of 1.
+
+step 25 e
+Using an id selector, give the element with the id gray-tnstrument a
+width of 15%, a height of 40%, and a background-color of rgb( 167,
+162, 117).
+
+step 26
+Now move it into place with a position of absolute, a top value of 50px,
+and a left value of 125px.
+
+step 27
+Set the z-tndex to 1.
+
+Step 28
+Use a class selector to create a rule for the elements with black-dot
+class. Set the width to løpx, the height to 10px, and the background-
+color to rgb(45, 31, 19).
+
+step 29
+These dots are just a little too square. Give the black-dot class a border-
+radius of to fix it.
+
+step 30 e
+Move the dots into place by setting the display to block, the margtn to
+auto, and the margin-top to 65%.
+
+Step 31
+Use an id selector to style the element with the id tan-table. Give it a
+width of 45øpx,a height of 140px, and a background-color of
+#D2691E .
+
+step 32
+Move the table into place by giving ita position of absolute, a top value
+of 275px, and a left value of 15px.
+
+step 33
+Give the table a z-tndex of 1.
+
+Step 34
+After your dtv#0ffwhtte-character element, add a dtv with the td of
+black-character.
+
+step 35
+Within your new *black-character element, add three div elements with
+the following td values, in order black-hat, gray-mask, white-paper.
+
+step 36
+The mask needs eyes. Within your #gray-mask element, add two dtv
+elements. The first should have the class set to eyes left, and the
+second should have the class set to eyes right.
+
+step 37
+Time to use some FontAwesome icons.
+The element is used for idiomatic text, or text that is separate from the
+"normal" text content. This could be for italic text, such as scientific terms, or for
+icons like those provided by FontAwesome.
+Within your #whtte-paper element, add four t elements. Give them all a
+class valueof fas fa-mustc.
+This special class is how FontAwesome determines which icon to load. fas
+indicates the category of icons (FontAwesome Solid, here), while fa-mus tc
+selects the specific icon.
+
+step 38
+Use an id selector to create a rule for the element with the id black-
+character. Set the width to 300px, the hetght to 50øpx, and the
+background-color to rgb(45, 31, 19).
+
+Step 39
+Move the #black-character element into place by setting the posit ton to
+absolute, the top to 30%, and the left to 59%.
+
+Step 40
+Use an id selector to create a rule for the element with the id black-hat. Give it
+a width of ø,a height of 0, and a border-style of solid.
+
+Step 41
+Set the border-width of the #black-hat to 15øpx ø ø 300px.
+
+Step 42
+Just like with your *white-hat , you should style the border for the *black-hat
+element. Give it a border-top-color, border-rtght-color, and border-
+bottom-color of transparent. Set the border-left-color to rgb(45, 31,
+19).
+
+Step 43
+Now position the #btack-hat element. Give ita posttton of absolute,
+with a top of -15øpx and a left of O.
+
+Step 44
+Using an id selector, style the element with the id gray-mask. Give it a
+width of 150px, a height of 150px, and a background-color of
+rgb( 167, 162, 117).
+
+step 45
+Position the #gray-mask element by setting position to absolute, the
+top to -10px, and the left to 7øpx.
+
+Step 46
+Using an id selector, create a rule for the id white-paper. Set the width
+to 4øøpx, the height to leøpx, and the background-color to
+GhostWhtte.
+
+step 47
+Give the *white-paper a position of absolute, a top of 25øpx, and a
+left of -150px to move it into place.
+
+Step 48
+Set the z-tndex of the #whtte-paper element to 1.
+
+step 49
+FontAwesome icons come with their own styling to define the icon.
+However, you can still set the styling yourself as well, to change things
+like the color and size. For now, use a class selector to target the icons
+with the class fa-mustc . Set the display to inline-block, the
+margin-top to 8%, and the margin-left to 13%.
+
+Step 50
+Below your *black-character element, add two new div elements.
+These will be the shawl. Give both of them a class of blue. Then give the
+first one an td of blue-left, and the second an td of blue-right.
+
+Step 51
+Use a class selector to target the new elements with the class blue. Set
+the background-color to #1E9ØFF.
+
+Step 52
+Select the element with the id blue-left using an id selector. Give it a
+width of 5øøpx and a height of 3øøpx.
+
+step 53
+Now set the posit ton to absolute, the top to 2B, and the left to
+
+Step 54
+Next, target the element with the id blue-rtght using an id selector. Set
+the width to 4øøpx and the height to 3øøpx.
+
+step 55
+Give the #blue-rtght element the correct positioning with position set
+to absolute, top set to 50%, and left set to 40%.
+
+step 56
+Below your . blue elements, add another div. Give it the td value of
+orange-character .
+
+step 57
+Within that #orange-character element, add four div elements. Give
+them the td values of black-round-hat, eyes-dtv, triangles, and
+guitar, in order.
+
+step 58
+The #eyes-dtv element should hold some eyes. Add two div elements
+inside. Give the first a class of eyes left, and give the second a class
+of eyes right.
+
+Step 59
+Within the #trtangles div, you will need to add the elements that will
+become your triangles. Create thirty d tv elements and give each of them
+the class triangle.
+
+Step 60
+Within the #guttar element, create three div elements. Give the first two
+a class value of guitar. Then give the first an td of guitar-left, and
+the second an td of guitar-right. Add an td tothe third dtv with the
+value guitar-neck.
+The third div should not have the guttar class.
+
+step 61
+Use another FontAwesome icon for your . guitar. Inside both the
+*guitar-left and *guitar-right elements, add an t element and give
+ita class of fas fa-bars.
+
+step 62
+Select your orange-character element with an id selector. Give it a
+width of 25øpx,a height of 55øpx, and a background-color of
+rgb(24ø, 78, 42).
+
+step 63
+Give the #orange-character element a position of absolute, a top of
+25%, and a left of 40%.
+
+Step 64
+Style the element with the id black-round-hat using an id selector. Set
+the width to 180px, the height to 150px, and the background-color to
+rgb(45, 31, 19).
+
+Step 65
+The #btack-round-hat element should probably be round. Give it a
+border-radius of 50% to fix this.
+
+step 66
+Move the *black-round-hat element into place with a posit ton of
+absolute, a top of -løøpx,anda left of 5px.
+
+
+step 67
+Put the *black-round-hat element on the correct layer with a z-tndex
+of -1.
+
+step 68
+Use an id selector to create a rule for the element with the id eyes-div.
+Set the width to 18øpx and the height to 5øpx.
+
+step 69
+Now move the *eyes-div element into position with position set to
+absolute, top set to -4øpx, and left set to 2øpx.
+
+Step 70
+Give the #eyes-dtv element a z-tndex of 3.
+
+Step 71
+Target the element with the id trtangles using an id selector. Set the
+wtdth to 250px and the height to 550px.
+
+step 72
+Create a class selector for the elements with the triangle class. Set the
+width to and the height to O.
+
+step 73
+Style the border of your . trtangle elements. Set the border-style to
+solid and the border-width to 42px 45px 45px 0 .
+
+Step 74
+Give your . triangle elements the correct color. Set the border-top-
+color, border-bottom-color, and border-left-color to
+transparent. Set the border-right-color to Gold .
+
+step 75
+Adjust the layout of the . triangle elements with a display of inline-
+block.
+
+step 76
+Now use an id selector for guitar. Set the width to 100%, and the
+height to løøpx.
+
+Step 77
+In the same #guttar selector, set the post t ton to absolute, the top to
+12øpx, and the left to øpx.
+
+step 78
+Give the *guitar rule a z-tndex of 3.
+
+step 79
+Now use a class selector to target guitar. This will style the two "halves"
+of your guitar. Set the width to 15øpx, the height to 12øpx, the
+background-color to Goldenrod, and the border-radius to 50%.
+
+Step 80
+Select the td with value guttar-left, and set the posttton to
+absolute and the left to øpx .
+
+Step 81
+Select the td with value guitar-right, and also set position to
+absolute. This time, set left to løepx.
+
+step 82
+Now you need to move the bar icons into place. Create a class selector
+for the fa-bars class. Set the display to block, the margtn-top to
+30%, and the margin-left to 40%.
+
+step 83
+Use an id selector to create a rule for the id guitar-neck. Set the width
+to 2øøpx, the height to 30px, and the background-color to #D2691E.
+
+Step 84
+Now move the #guttar-neck element with a posttton of absolute, a
+top value of 45px, and a left value of 2øøpx.
+
+step 85
+Give the *guitar-neck element a z-tndex of 3.
+
+Step 86
+Time to style the elements with the eyes class. Use a class selector to
+set the width to 35px, the height to 20px, the background-color to
+#884513, and the border-radius to 2øpx 50%.
+
+step 87
+Target the class with value right and setthe position to absolute,
+top to 15px, and right to 30px.
+
+Step 88
+For the class with value left, create the selector and set the posit ton
+to absolute, the top to 15px, and the left to 3øpx.
+
+step 89
+One last step. The FontAwesome icons are a little too small. Target all of
+them with a class selector for fas, and set the font-size to 30px.
+With that, your Picasso painting is complete!
+
+

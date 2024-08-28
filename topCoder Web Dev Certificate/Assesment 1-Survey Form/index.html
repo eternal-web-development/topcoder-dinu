@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>  
+    <h1 id="title">Thank you for shopping<br> Tell us about it ?</h1>
+   
+  
+    <form id="survey-form" method="" action="">
+      <p id="description">Please take a moment to fill our <em>survey form</em>.Your feed back will greatly help us in optimizing our services for you.</p> 
+      <fieldset>
+        <label id="name-label" for="name">Enter your name <input id="name" type="text" placeholder="ex: Jack Sparrow" required></label>
+        <label id="email-label" for="email">Enter your email <input id="email" type="email" placeholder="ex: sparrow@abc.com" required></label>
+        <label id="number-label" for="number">Enter your 'Star Points' number <input id="number" type="number" min="1" max="100000" placeholder="ex: 10034"></label>
+      </fieldset>
+
+      <fieldset>
+        <label id="dropdown-label" for="dropdown"> How did you hear about us
+          <select id="dropdown">
+          <option value=""></option>  
+          <option value="newspaper"> Newspaper</option>
+          <option value="online-advertisement"> Online Advertisement</option>
+          <option value="social-media"> Social Media</option>
+          <option value="from-a-friend"> From a friend</option>
+          </select>
+        </label>
+        <label class="special-label">Would you buy our products again?
+          <label for="absolutely"><input id="absolutely" type="radio" name="buy-again" value="absolutely"> Absolutely</label>
+          <label for="maybe"><input id="maybe" type="radio" name="buy-again" value="maybe"> Maybe</label>
+          <label for="not-a-chance"><input id="not-a-chance" type="radio" name="buy-again" value="not-a-chance"> Not a chance</label>
+        </label>
+        <label class="special-label"> Select the features that you would agree about us: 
+          <label for="product range"><input type="checkbox" id="product-range"value="product range"> Wide Product Range</label>
+          <label for="product-quality"><input type="checkbox" id="product-quality" value="product quality"> High Product Quality</label>
+          <label for="mega-deals"><input type="checkbox" id="mega-deals" value="mega deals"> Endless 'Mega Deals'</label>
+          <label for="vouchers-discounts"><input type="checkbox" id="vouchers-discounts" value="vouchers and discounts"> Unbelievable Vouchers & Discounts</label>
+          <label for="shipping-fee"><input type="checkbox" id="shipping-fee" value="low/free shipping fee"> Low/Free Shipping fee</label>
+          <label for="responds"><input type="checkbox" id="responds" value="quicker responds to enquires"> Quick Responds to enquires</label>
+          <label for="refund"><input type="checkbox" id="refund" value="refund process"> Easy Returns & Refund process</label>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label id="" for="">We love to here what you think about us 
+          <textarea id="" rows="3" cols="30" placeholder="What i love about your service is..."></textarea>
+        </label> 
+      </fieldset>
+      <input id="submit" type="submit">
+    </form>
+    
+  </body>
+</html>

@@ -1,0 +1,66 @@
+* {
+  margin:0;
+  padding:0;
+  border:1px solid gray;
+}
+body {
+	/*width:1920px;
+	height:4320px;*/
+  width:1366px;
+	background-color:#F1F1F1;
+}
+#coffee-beans-jar {
+	width:500px; 
+	height:564px; 
+}
+#logo-image {
+	width:30px;
+	height:30px;
+}
+#logo-text {
+  
+  width: 148px;
+  height: 36px;
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 700;
+}
+nav a {
+  color: #757575; 
+  font-size: 18px;
+  font-weight: 400;
+}
+#button1{
+  width: 242px;
+}#button2{
+  width: 610px; 
+}
+.call-to-action {
+  height: 58px;
+  border-radius: 52px;
+  color:white;
+  background: #51463f;
+}
+.benefits {
+  display: grid;
+  grid-template-columns:100px 1fr;
+  width:375px;
+  height:209px;
+}
+.benefit-image {
+  width:100px;
+  height:100px;
+}
+.benefits p{
+  grid-column:2/2;
+  overflow: hidden;
+}
+footer ul {
+  width:fit-content;
+  display: inline-block;
+  list-style: none;
+}
+#container {
+  width:fit-content;
+  margin:0 auto;
+}
