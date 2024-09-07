@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C++ Documentation-Assessment-2</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+    <nav id="navbar">
+      <header><h1>C++<br> Documentation</h1></header>
+      <ul>
+        <li><a href= "#introduction" class="nav-link">Introduction</a></li>
+        <li><a href= "#basics_of_c++" class="nav-link">Basics of C++</a></li>
+        <li><a href= "#program_structure" class="nav-link">Program Structure</a></li>
+        <li><a href= "#compound_data_types" class="nav-link">Compound Data Types</a></li>
+        <li><a href= "#classes" class="nav-link">Classes</a></li>
+        <li><a href= "#other_language_features" class="nav-link">Other Language Features</a></li>
+        <li><a href= "#c++_standared_library" class="nav-link">C++ Standared Library</a></li>
+      </ul>
+    </nav>
+
+    <main id="main-doc">      
+      
+      <section class="main-section" id="introduction">
+        <header><h2>Introduction</h2></header>
+        <article>
+         
+<p>The essential tools needed to follow these tutorials are a computer and a compiler toolchain able to compile C++ code and build the programs to run on it.</p>
+
+<p>C++ is a language that has evolved much over the years, and these tutorials explain many features added recently to the language. Therefore, in order to properly follow the tutorials, a recent compiler is needed. It shall support (even if only partially) the features introduced by the 2011 standard.</p>
+
+<p>Many compiler vendors support the new features at different degrees. See the bottom of this page for some compilers that are known to support the features needed. Some of them are free!</p>
+
+<p>If for some reason, you need to use some older compiler, you can access an older version of these tutorials here (no longer updated).</p>
+
+          <p><a href="https://cplusplus.com/doc/tutorial/introduction/">What is a compiler? Read more ></a></p>
+        </article>
+      </section>
+
+      <section class="main-section" id="basics_of_c++">
+        <header><h2>Basics Of C++</h2></header>
+        <article> 
+<p>
+  <h3>Structure of a program</h3>
+The best way to learn a programming language is by writing programs. Typically, the first program beginners write is a program called "Hello World", which simply prints "Hello World" to your computer screen. Although it is very simple, it contains all the fundamental components C++ programs have:
+</p>
+<code>
+   <pre class="code long-code">
+      // my first program in C++
+#include <iostream>
+
+int main()
+{
+  std::cout << "Hello World!";
+}
+    </pre>
+    <p class="output">output</p>
+    <pre class="code">Hello World!</pre>   
+</code>
+<p>
+  The left panel above shows the C++ code for this program. The right panel shows the result when the program is executed by a computer. The grey numbers to the left of the panels are line numbers to make discussing programs and researching errors easier. They are not part of the program.
+
+</p>
+<p><a href="https://cplusplus.com/doc/tutorial/program_structure/">Read more about Program Structure></a></p>
+        </article>
+      </section>
+
+      <section class="main-section" id="program_structure">
+        <header><h2>Program Structure</h2></header>
+        <article>
+          <h3>Statements and flow control</h3>
+<p>A simple C++ statement is each of the individual instructions of a program, like the variable declarations and expressions seen in previous sections. They always end with a semicolon (;), and are executed in the same order in which they appear in a program.</p>
+
+<p>But programs are not limited to a linear sequence of statements. During its process, a program may repeat segments of code, or take decisions and bifurcate. For that purpose, C++ provides flow control statements that serve to specify what has to be done by our program, when, and under which circumstances.</p>
+
+<p>Many of the flow control statements explained in this section require a generic (sub)statement as part of its syntax. This statement may either be a simple C++ statement, -such as a single instruction, terminated with a semicolon (;) - or a compound statement. A compound statement is a group of statements (each of them terminated by its own semicolon), but all grouped together in a block, enclosed in curly braces: {}:</p>
+
+<p>
+  <code>{ statement1; statement2; statement3; }</code>
+</p>
+
+<p>
+  The entire block is considered a single statement (composed itself of multiple substatements). Whenever a generic statement is part of the syntax of a flow control statement, this can either be a simple statement or a compound statement.
+</p>
+
+<h3>Selection statements: if and else</h3>
+<p>The if keyword is used to execute a statement or block, if, and only if, a condition is fulfilled. Its syntax is:</p>
+
+<code>if (condition) statement</code>
+
+<p>Here, condition is the expression that is being evaluated. If this condition is true, statement is executed. If it is false, statement is not executed (it is simply ignored), and the program continues right after the entire selection statement.</p>
+<p>For example, the following code fragment prints the message (x is 100), only if the value stored in the x variable is indeed 100:</p>
+
+<code>
+  <pre class="code">
+if (x == 100)
+  cout << "x is 100";
+</pre>
+</code>
+
+<p>If x is not exactly 100, this statement is ignored, and nothing is printed.</p>
+
+<p>If you want to include more than a single statement to be executed when the condition is fulfilled, these statements shall be enclosed in braces ({}), forming a block:</p>
+
+<code>
+<pre class="code">
+if (x == 100)
+{
+   cout << "x is ";
+   cout << x;
+}</pre>
+</code>
+
+<p>As usual, indentation and line breaks in the code have no effect, so the above code is equivalent to:</p>
+
+<code> 
+  <pre class="code long-code">
+if (x == 100) { cout << "x is "; cout << x; }
+</pre>
+</code>
+
+<p>Selection statements with if can also specify what happens when the condition is not fulfilled, by using the else keyword to introduce an alternative statement. Its syntax is:</p>
+
+<code>if (condition) statement1 else statement2</code>
+
+<p>where statement1 is executed in case condition is true, and in case it is not, statement2 is executed.</p>
+
+<p>For example:</p>
+
+<code>
+  <pre class="code">
+if (x == 100)
+  cout << "x is 100";
+else
+  cout << "x is not 100";</pre>
+  </code>
+
+<p>This prints x is 100, if indeed x has a value of 100, but if it does not, and only if it does not, it prints x is not 100 instead.</p>
+<p>Several if + else structures can be concatenated with the intention of checking a range of values. For example:</p>
+
+<code>
+  <pre class="code">
+if (x > 0)
+  cout << "x is positive";
+else if (x < 0)
+  cout << "x is negative";
+else
+  cout << "x is 0";
+  </pre>
+  </code>
+
+<p>This prints whether x is positive, negative, or zero by concatenating two if-else structures. Again, it would have also been possible to execute more than a single statement per case by grouping them into blocks enclosed in braces: {}.
+</p>
+<p><a href="https://cplusplus.com/doc/tutorial/control/">Iteration statements (loops)..Read more></a></p>
+        </article>
+      </section>
+
+      <section class="main-section" id="compound_data_types">
+        <header><h2>Compound Data Types</h2></header>
+        <article>
+        <h3>Arrays</h3>
+<p>An array is a series of elements of the same type placed in contiguous memory locations that can be individually referenced by adding an index to a unique identifier.</p>
+
+<p>That means that, for example, five values of type int can be declared as an array without having to declare 5 different variables (each with its own identifier). Instead, using an array, the five int values are stored in contiguous memory locations, and all five can be accessed using the same identifier, with the proper index.</p>
+
+<p>For example, an array containing 5 integer values of type int called foo could be represented as:</p>
+<img src="https://cplusplus.com/doc/tutorial/arrays/arrays1.png" alt="A graphical represention of an empty data array">
+
+<p> where each blank panel represents an element of the array. In this case, these are values of type int. These elements are numbered from 0 to 4, being 0 the first and 4 the last; In C++, the first element in an array is always numbered with a zero (not a one), no matter its length.</p>
+
+<p>Like a regular variable, an array must be declared before it is used. A typical declaration for an array in C++ is:</p>
+
+<p><code>type name [elements];</code></p>
+
+<p>where type is a valid type (such as int, float...), name is a valid identifier and the elements field (which is always enclosed in square brackets []), specifies the length of the array in terms of the number of elements.</p>
+
+<p>Therefore, the foo array, with five elements of type int, can be declared as:</p>
+
+<p><code>int foo [5];</code></p>
+
+<p>NOTE: The elements field within square brackets [], representing the number of elements in the array, must be a constant expression, since arrays are blocks of static memory whose size must be determined at compile time, before the program runs.</p>
+<p><a href="https://cplusplus.com/doc/tutorial/arrays/">Initializing arrays..Read morre></a></p>
+        </article>
+      </section>
+
+      <section class="main-section" id="classes">
+       <header><h2>Classes</h2></header>
+        <article>
+<p>Classes are an expanded concept of data structures: like data structures, they can contain data members, but they can also contain functions as members.</p>
+
+<p>An object is an instantiation of a class. In terms of variables, a class would be the type, and an object would be the variable.</p>
+
+<p>Classes are defined using either keyword class or keyword struct, with the following syntax:</p>
+
+<code><pre class="code">
+class class_name {
+  access_specifier_1:
+    member1;
+  access_specifier_2:
+    member2;
+  ...
+} object_names;
+</pre></code>
+
+<p>Where class_name is a valid identifier for the class, object_names is an optional list of names for objects of this class. The body of the declaration can contain members, which can either be data or function declarations, and optionally access specifiers.</p>
+
+<p>Classes have the same format as plain data structures, except that they can also include functions and have these new things called access specifiers. An access specifier is one of the following three keywords: private, public or protected. These specifiers modify the access rights for the members that follow them:</p>
+
+<p>private members of a class are accessible only from within other members of the same class (or from their "friends").</p>
+<p>protected members are accessible from other members of the same class (or from their "friends"), but also from members of their derived classes.</p>
+<p>Finally, public members are accessible from anywhere where the object is visible.</p>
+
+<p>By default, all members of a class declared with the class keyword have private access for all its members. Therefore, any member that is declared before any other access specifier has private access automatically. For example:</p>
+
+<code><pre class="code">
+class Rectangle {
+    int width, height;
+  public:
+    void set_values (int,int);
+    int area (void);
+} rect;
+</pre></code>
+
+<p>Declares a class (i.e., a type) called Rectangle and an object (i.e., a variable) of this class, called rect. This class contains four members: two data members of type int (member width and member height) with private access (because private is the default access level) and two member functions with public access: the functions set_values and area, of which for now we have only included their declaration, but not their definition.</p>
+
+<p>Notice the difference between the class name and the object name: In the previous example, Rectangle was the class name (i.e., the type), whereas rect was an object of type Rectangle. It is the same relationship int and a have in the following declaration:</p>
+
+<code><pre>int a</pre></code>
+
+<p>where int is the type name (the class) and a is the variable name (the object).</p>
+
+<p>After the declarations of Rectangle and rect, any of the public members of object rect can be accessed as if they were normal functions or normal variables, by simply inserting a dot (.) between object name and member name. This follows the same syntax as accessing the members of plain data structures. For example:</p>
+
+<code><pre class="code">
+rect.set_values (3,4);
+myarea = rect.area();
+ </pre></code>
+
+<p>The only members of rect that cannot be accessed from outside the class are width and height, since they have private access and they can only be referred to from within other members of that same class.</p>
+
+<p><a href="https://cplusplus.com/doc/tutorial/classes/">Read more about Classes></a></p>
+        </article>
+      </section>
+
+      <section class="main-section" id="other_language_features">
+        <header><h2>Other Language Features</h2></header>
+        <article>
+<h3>Implicit conversion</h3>
+<p>Implicit conversions are automatically performed when a value is copied to a compatible type. For example:</p>
+
+<code><pre class="code">
+short a=2000;
+int b;
+b=a;
+</pre></code>
+
+<p>Here, the value of a is promoted from short to int without the need of any explicit operator. This is known as a standard conversion. Standard conversions affect fundamental data types, and allow the conversions between numerical types (short to int, int to float, double to int...), to or from bool, and some pointer conversions.</p>
+
+<p>Converting to int from some smaller integer type, or to double from float is known as promotion, and is guaranteed to produce the exact same value in the destination type. Other conversions between arithmetic types may not always be able to represent the same value exactly:</p>
+
+<p>If a negative integer value is converted to an unsigned type, the resulting value corresponds to its 2's complement bitwise representation (i.e., -1 becomes the largest value representable by the type, -2 the second largest, ...).</p>
+
+<p>The conversions from/to bool consider false equivalent to zero (for numeric types) and to null pointer (for pointer types); true is equivalent to all other values and is converted to the equivalent of 1.</p>
+
+<p>If the conversion is from a floating-point type to an integer type, the value is truncated (the decimal part is removed). If the result lies outside the range of representable values by the type, the conversion causes undefined behavior.</p>
+
+<p>Otherwise, if the conversion is between numeric types of the same kind (integer-to-integer or floating-to-floating), the conversion is valid, but the value is implementation-specific (and may not be portable).</p>
+
+<p>Some of these conversions may imply a loss of precision, which the compiler can signal with a warning. This warning can be avoided with an explicit conversion.</p>
+
+<p>For non-fundamental types, arrays and functions implicitly convert to pointers, and pointers in general allow the following conversions:</p>
+<ul>
+<li>Null pointers can be converted to pointers of any type</li>
+<li>Pointers to any type can be converted to void pointers.</li>
+<li>Pointer upcast: pointers to a derived class can be converted to a pointer of an accessible and unambiguous base class, without modifying its const or volatile qualification.</li>
+</ul>
+
+<p><a href="https://cplusplus.com/doc/tutorial/typecasting/">Implicit conversions with classes..Read more></a></p>
+        </article>
+      </section>
+
+      <section class="main-section" id="c++_standared_library">
+        <header><h2>C++ Standared Library</h2></header>
+        <article>
+<h3>Input/output with files</h3>
+<p>C++ provides the following classes to perform output and input of characters to/from files:</p>
+
+<ol class="list">
+<li><code>ofstream:</code> Stream class to write on files</li>
+<li><code>ifstream:</code> Stream class to read from files</li>
+<li><code>fstream:</code> Stream class to both read and write from/to files.</li>
+</ol>
+
+<p>These classes are derived directly or indirectly from the classes istream and ostream. We have already used objects whose types were these classes: cin is an object of class istream and cout is an object of class ostream. Therefore, we have already been using classes that are related to our file streams. And in fact, we can use our file streams the same way we are already used to use cin and cout, with the only difference that we have to associate these streams with physical files. Let's see an example:</p>
+
+<code>
+  <pre class="code long-code">
+    // basic file operations
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main () {
+  ofstream myfile;
+  myfile.open ("example.txt");
+  myfile << "Writing this to a file.\n";
+  myfile.close();
+  return 0;
+}
+  </pre>
+  <p class="output">output</p>
+  <pre class="code long-code">
+    [file example.txt]
+    Writing this to a file.
+  </pre>
+</code>
+  <p> This code creates a file called example.txt and inserts a sentence into it in the same way we are used to do with cout, but using the file stream myfile instead.
+
+ <p>But let's go step by step: </p>
+
+ <p><a href="https://cplusplus.com/doc/tutorial/files/">Open a file..Read more></a><p>
+  </p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
