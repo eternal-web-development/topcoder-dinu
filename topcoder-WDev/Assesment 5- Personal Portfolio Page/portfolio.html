@@ -1,54 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Portfolio</title>
-  </head>
-  <body>
-    <section id="nav-section">
-      <nav id="navbar">
-        <ul>
-          <li><a href="" class="nav-link">Link 1</a></li>
-          <li><a href="" class="nav-link">Link 2</a></li>
-          <li><a href="" class="nav-link">Link 3</a></li>
-        </ul>
-      </nav>
-    </section>
-    <section id="welcome-section">
-      <div id="greeting">
-        <h1>I am Dinusha Kuruvita</h1>
-        <p>Welcome to my portfolio page</p>
-      </div>
-    </section>
-    <section id="projects">
-      <div>
-         <h3 class="sub-heading">These are some of<br>my projects</h3>
-          <hr>
-      </div>     
-      <div id="tile-container">
-        <div class="project-tile">
-         <img src="https://lcdn-us.icons8.com/c/XJLdCEwetEW-SeA3ZDIjaQ/c3fc5806de28b2a907bce23e0e61acd363cab05f.png" alt="A penguin image" />  
-        </div>
-        <div class="project-tile">
-          <img src="https://lcdn-us.icons8.com/c/XJLdCEwetEW-SeA3ZDIjaQ/8d437b2b25afb58e1f761ca5a1d0e8016d051c3a.png" alt="survay form image">
-        <div class="project-tile">
-           <img src="https://lcdn-us.icons8.com/c/XJLdCEwetEW-SeA3ZDIjaQ/9ca221ef3083f96151896dd2742130025059e8cf.png" alt="skyline illustration" />
-        </div>
-        <div class="project-tile">
-          <img src="https://lcdn-us.icons8.com/c/XJLdCEwetEW-SeA3ZDIjaQ/0789eff4b84430e87b037023fe553a3d72cfcea1.png" alt="a bill" />
-        </div>
-        <div class="project-tile"> 
-          <img src="https://lcdn-us.icons8.com/c/XJLdCEwetEW-SeA3ZDIjaQ/87b39fcc2beb03267e213f76d9abb51ff8e00afe.png" alt="a magazine" />
-        </div>
-        <div class="project-tile"> 
-          <img src="https://lcdn-us.icons8.com/c/XJLdCEwetEW-SeA3ZDIjaQ/021c5392c577fc44a0f423e09c099b92bb906a6f.png" alt="a tribute page" />
-        </div>
-      </div>
-      <p><a href="" id="profile-link">see all</a></p>
-    </section>
-    <section id="contacts"></section>
-    <footer></footer>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com"
+		/>
+		<!--preconnect to speed up loading time
+		This is 'Raleway' font from Google Fonts-->
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<!--'Raleway' font ends here-->
+		<!--'Poppins' font starts here-->
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<!--'Poppins' font ends here-->
+		<link
+			rel="stylesheet"
+			href="styles.css"
+		/>
+		<title>Portfolio</title>
+	</head>
+	<body>
+		<!--navbar start-->
+		<section id="nav-section">
+			<nav id="navbar">
+				<ul>
+					<li>
+						<a
+							href="#welcome-section"
+							class="nav-link"
+							>About</a
+						>
+					</li>
+					<li>
+						<a
+							href="#projects"
+							class="nav-link"
+							>Work</a
+						>
+					</li>
+					<li>
+						<a
+							href="#contacts-container"
+							class="nav-link"
+							>Contact</a
+						>
+					</li>
+				</ul>
+			</nav>
+		</section>
+		<!--navbar end-->
+		<!--welcome start-->
+		<section id="welcome-section">
+			<div id="greeting">
+				<h1>Hey, I am Dinu</h1>
+				<p>Welcome to my portfolio page</p>
+			</div>
+		</section>
+		<!--welcome end-->
+		<!--projects start-->
+		<section id="projects">
+			<div class="col-1 col-e row-1">
+				<h3 class="sub-heading">These are some of my projects</h3>
+			</div>
+
+			<div class="project-tile col-1 row-2">
+				<a href="#">
+					<img
+						src="https://res.cloudinary.com/dmsgfhdgn/image/upload/v1725640233/penguin_ngqud8.png"
+						alt="A penguin image"
+					/>
+					<p class="tile-text">
+						<span class="tile-text-sub">&lt;</span>
+						Penguin
+						<span class="tile-text-sub">&#47;&gt;</span>
+					</p>
+				</a>
+			</div>
+			<div class="project-tile col-1 row-3">
+				<a href="#">
+					<img
+						src="https://res.cloudinary.com/dmsgfhdgn/image/upload/v1725640233/survay_form_cxvtit.png"
+						alt="survay form image"
+					/>
+					<p class="tile-text">
+						<span class="tile-text-sub">&lt;</span>
+						Survey Form
+						<span class="tile-text-sub">&#47;&gt;</span>
+					</p>
+				</a>
+			</div>
+			<div class="project-tile col-3 row-2">
+				<a href="#">
+					<img
+						src="https://res.cloudinary.com/dmsgfhdgn/image/upload/v1725640234/tribute-page_dar931.png"
+						alt="a tribute page"
+					/>
+					<p class="tile-text">
+						<span class="tile-text-sub">&lt;</span>
+						Tribute Page
+						<span class="tile-text-sub">&#47;&gt;</span>
+					</p>
+				</a>
+			</div>
+			<div class="project-tile col-2 row-3">
+				<a href="#">
+					<img
+						src="https://res.cloudinary.com/dmsgfhdgn/image/upload/v1725640233/Nutrition-label_g0dtrs.png"
+						alt="a bill"
+					/>
+					<p class="tile-text">
+						<span class="tile-text-sub">&lt;</span>
+						Nutrition Bill
+						<span class="tile-text-sub">&#47;&gt;</span>
+					</p>
+				</a>
+			</div>
+			<div class="project-tile col-2 row-2">
+				<a href="#">
+					<img
+						src="https://res.cloudinary.com/dmsgfhdgn/image/upload/v1725640238/magazine_kelvhw.png"
+						alt="a magazine"
+					/>
+					<p class="tile-text">
+						<span class="tile-text-sub">&lt;</span>
+						Magazine
+						<span class="tile-text-sub">&#47;&gt;</span>
+					</p>
+				</a>
+			</div>
+			<div class="project-tile col-3 row-3">
+				<a href="#">
+					<img
+						src="https://res.cloudinary.com/dmsgfhdgn/image/upload/v1725640233/skyline_rlm46j.png"
+						alt="skyline illustration"
+					/>
+					<p class="tile-text">
+						<span class="tile-text-sub">&lt;</span>
+						Skyline Illustration
+						<span class="tile-text-sub">&#47;&gt;</span>
+					</p>
+				</a>
+			</div>
+
+			<p class="col-2 row-4">
+				<a
+					href="#"
+					id="profile-link"
+					>Show all ></a
+				>
+			</p>
+		</section>
+		<!--projects end-->
+		<!--social media contacts start-->
+		<section id="contacts-container">
+			<h2>Let's work together</h2>
+			<p>what's on your mind ?</p>
+			<div id="contacts">
+				<a
+					href="#"
+					class="socialm-link"
+					><img
+						src="https://res.cloudinary.com/dmsgfhdgn/image/upload/v1725647006/facebook_hoyd73.png"
+						alt="Facebook icon"
+						class="socialm-icons"
+					/><span class="socialm-text">Facebook</span></a
+				>
+				<a
+					href="#"
+					class="socialm-link"
+					><img
+						src="https://res.cloudinary.com/dmsgfhdgn/image/upload/v1725208851/GitHub_h5joen.png"
+						alt="GitHub icon"
+						class="socialm-icons"
+					/><span class="socialm-text">GitHub</span></a
+				>
+				<a
+					href="#"
+					class="socialm-link"
+					><img
+						src="https://res.cloudinary.com/dmsgfhdgn/image/upload/v1725208851/twitter_bjmzyj.png"
+						alt="Twitter icon"
+						class="socialm-icons"
+					/><span class="socialm-text">Twitter</span></a
+				>
+				<a
+					href="#"
+					class="socialm-link"
+					><img
+						src="https://res.cloudinary.com/dmsgfhdgn/image/upload/v1725208851/email_uaeoho.png"
+						alt="Email icon"
+						class="socialm-icons"
+					/><span class="socialm-text">Send a mail</span></a
+				>
+				<a
+					href="#"
+					class="socialm-link"
+					><img
+						src="https://res.cloudinary.com/dmsgfhdgn/image/upload/v1725208851/phone_ru0r5s.png"
+						alt="Mobile phone icon"
+						class="socialm-icons"
+					/><span class="socialm-text">Call me</span></a
+				>
+			</div>
+		</section>
+		<!--social media contacts end-->
+		<footer>
+			<p id="disclamer">
+				This is just a fake portfolio made for a course assesment.
+			</p>
+			<p id="copyright">&copy topcoder</p>
+		</footer>
+	</body>
 </html>
