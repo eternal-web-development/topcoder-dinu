@@ -1,0 +1,1 @@
+[web page 01]([http://htmlpreview.github.io/?](https://htmlpreview.github.io/?https://github.com/eternal-web-development/topcoder-dinu/blob/main/topcoder-WDev/10%20Intermediate%20CSS-Picasso%20Painting/picasso_painting.html)
